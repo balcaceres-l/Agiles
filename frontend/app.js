@@ -61,35 +61,45 @@ const sectionContent = {
   `,
   'Estados de cuentas': `
     <div class="section-card">
-      <h2>Estados de cuentas</h2>
-      <p>Consulta los estados recientes de cada cuenta vinculada y mantén control de tus finanzas.</p>
-      <div class="table-responsive">
-        <table class="table-dashboard">
-          <thead>
-            <tr>
-              <th>Cuenta</th>
-              <th>Saldo actual</th>
-              <th>Último movimiento</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cuenta corriente · 0012345678</td>
-              <td>$9,450.00</td>
-              <td>21 mar 2026</td>
-            </tr>
-            <tr>
-              <td>Cuenta de ahorros · 0023456789</td>
-              <td>$14,820.50</td>
-              <td>18 mar 2026</td>
-            </tr>
-            <tr>
-              <td>Tarjeta de crédito · 0034567890</td>
-              <td>$5,120.00 disponible</td>
-              <td>17 mar 2026</td>
-            </tr>
-          </tbody>
-        </table>
+      <h2>Resumen de estados de cuenta</h2>
+      <p>Selecciona una cuenta para ver su estado de cuenta mensual con todos los detalles del periodo.</p>
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="summary-card-header">
+            <strong>Cuenta corriente · 0012345678</strong>
+          </div>
+          <div class="summary-card-details">
+            <div class="summary-detail-row"><span>Saldo actual</span><strong>$9,450.00</strong></div>
+            <div class="summary-detail-row"><span>Total depósitos</span><strong>$2,200.00</strong></div>
+            <div class="summary-detail-row"><span>Total retiros</span><strong>$560.00</strong></div>
+            <div class="summary-detail-row"><span>Comisiones</span><strong>$42.50</strong></div>
+          </div>
+          <a class="button-secondary" href="monthly-statement.html?account=0012345678">Ver estado de cuenta</a>
+        </div>
+        <div class="summary-card">
+          <div class="summary-card-header">
+            <strong>Cuenta de ahorros · 0023456789</strong>
+          </div>
+          <div class="summary-card-details">
+            <div class="summary-detail-row"><span>Saldo actual</span><strong>$14,820.50</strong></div>
+            <div class="summary-detail-row"><span>Total depósitos</span><strong>$3,500.00</strong></div>
+            <div class="summary-detail-row"><span>Total retiros</span><strong>$420.00</strong></div>
+            <div class="summary-detail-row"><span>Comisiones</span><strong>$30.00</strong></div>
+          </div>
+          <a class="button-secondary" href="monthly-statement.html?account=0023456789">Ver estado de cuenta</a>
+        </div>
+        <div class="summary-card">
+          <div class="summary-card-header">
+            <strong>Tarjeta de crédito · 0034567890</strong>
+          </div>
+          <div class="summary-card-details">
+            <div class="summary-detail-row"><span>Saldo actual</span><strong>$5,120.00 disponible</strong></div>
+            <div class="summary-detail-row"><span>Total pagos</span><strong>$1,100.00</strong></div>
+            <div class="summary-detail-row"><span>Total retiros</span><strong>$0.00</strong></div>
+            <div class="summary-detail-row"><span>Comisiones</span><strong>$18.00</strong></div>
+          </div>
+          <a class="button-secondary" href="monthly-statement.html?account=0034567890">Ver estado de cuenta</a>
+        </div>
       </div>
     </div>
   `,

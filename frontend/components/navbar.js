@@ -1,4 +1,4 @@
-export function renderNavBar(containerId, activeSection, onSelect) {
+export function renderNavBar(containerId, activeSection, onSelect, userName = 'Usuario') {
   const navItems = [
     'Gestionar cuentas',
     'Depositos',
@@ -24,6 +24,10 @@ export function renderNavBar(containerId, activeSection, onSelect) {
           )
           .join('')}
       </div>
+      <div class="nav-actions">
+        <button class="nav-profile" type="button" id="profile-button">${userName}</button>
+        <button class="logout-button" type="button" id="logout-button">Cerrar sesión</button>
+      </div>
     </div>
   `;
 
@@ -33,4 +37,18 @@ export function renderNavBar(containerId, activeSection, onSelect) {
       onSelect(section);
     });
   });
+
+  const profileButton = container.querySelector('#profile-button');
+  if (profileButton) {
+    profileButton.addEventListener('click', () => {
+      window.location.href = 'profile.html';
+    });
+  }
+
+  const logoutButton = container.querySelector('#logout-button');
+  if (logoutButton) {
+    logoutButton.addEventListener('click', () => {
+      window.location.href = 'login.html';
+    });
+  }
 }
