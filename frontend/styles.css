@@ -195,6 +195,55 @@ input:focus {
   font-size: 1.6rem;
 }
 
+.cards-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 24px;
+}
+
+.account-card {
+  border-radius: 22px;
+  border: 1px solid #e2e8f0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #f8fafc;
+}
+
+.account-card.active {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.14);
+}
+
+.account-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.account-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.account-detail-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.account-detail-grid .summary-card {
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
+}
+
 .section-card p {
   color: #475569;
   line-height: 1.8;
